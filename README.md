@@ -44,8 +44,8 @@ You will get an value of 8 hexadecimal digits for each connected LED-Warrior14UD
 **Error codes:**  
 0: No Error  
 1: No LED-Warrior14UDR with given serial found/connected  
-2: DALI bus is busy (someone is active on the bus)  
-4: DALI bus fault (no bus, short or other fatal errors)  
+2: Bus is busy (someone is active on the bus)  
+4: Bus fault (no bus, short or other fatal errors)  
 8: Input error in JSON object  
 16: General bus error  
 
@@ -64,7 +64,7 @@ This node will send 8 bit telegrams. As input mus be a JSON object or string in 
 }
 ```
 
-**mode**: This will define the type of DALI commands, 0=DACP, 1=COMMAND  
+**mode**: This will define the type of commands, 0=DACP, 1=COMMAND  
 **type**: This will define the address type, 0=BROADCAST, 1=GROUP, 2=SINGLE  
 **adr**: The device address between 0 and 63  
 **value**: The value which will be send  
@@ -85,8 +85,8 @@ This node will send a QUERY command to a single device and receive the answere a
 }
 ```
 
-**adr**: The device address between 0 an 63. Only single devices ar possible.  
-**value**: The value which will be send  
+**adr**: The device address between 0..63. Only single devices are possible.  
+**value**: The query which will be send  
 
 *Output*
 ```
@@ -104,7 +104,7 @@ This node will send a QUERY command to a single device and receive the answere a
 **data**: An array with the data, the size is equal to 'size'  
 
 
-The receive function has two outputs, one for the error message and one for the recevied data, 
+The receive function has two outputs, one for the error message, and one for the recevied data, 
 both in JSON format. If an error occurs the data object will be '-1' on each JSON entry.
 
 *Example*  
@@ -213,7 +213,7 @@ For more information about IEC62386 bus: https://www.dali-alliance.org/
 ------------
 
 ## Known issues
-- Without right permissions the default user 'pi' have no access to the LED-Warrior14U-DR.
+- Without permissions the default user 'pi' have no access to the LED-Warrior14U-DR.
 
 ------------
 
