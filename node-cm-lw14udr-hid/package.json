@@ -1,0 +1,31 @@
+{
+	"name": "node-cm-lw14udr-hid",
+	"version": "0.0.3",
+	"description": "Node for LED-Warrrio14U-DR from Codemercs based ob NODE-HID",
+	"dependencies": {
+		"node-hid": "^2.1.1"
+	},
+	"main": "lw14udr.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"node-red",
+		"lw14udr",
+		"LED-Warrior14udr",
+		"IEC62386",
+		"usb"
+	],
+	"node-red": {
+		"nodes": {
+			"lw14udr-hid": "lw14udr.js"
+		}
+	},
+	"author": {
+		"name": "Christoph Jung",
+		"email": "support@codemercs.com",
+		"url": "http://www.codemercs.com"
+	},
+	"readmeFilename": "README.md",
+	"license": "Apache-2.0"
+}
