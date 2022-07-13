@@ -3,7 +3,7 @@ This node-red nodes communicate with the LED-Warrior14U-DR on a Raspberry PI / L
 This package is deveoped and testet on Linux/Raspberry PI.
 
 ## Install NODE
-Copy the folder 'node-cm-lw14udr' into ~./node-red/node_modules and start/restart your Node-Red server.  
+Copy the folder 'node-cm-lw14udr-hid' into ~./node-red/node_modules and start/restart your Node-Red server.  
 You need also the node-js component 'node-hid' from https://github.com/node-hid/node-hid. Please follow the install instructions on this github page
 
 ------------
